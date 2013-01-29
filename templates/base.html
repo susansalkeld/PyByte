@@ -9,8 +9,7 @@
 
 	<!-- (en) Add your meta data here -->
 	<!-- (de) Fuegen Sie hier ihre Meta-Daten ein -->
-	<link href='http://fonts.googleapis.com/css?family=Trykker' rel='stylesheet' type='text/css'>
-	<link href="/home/susan/public_html/pybyte/static/css/flexible-grids.css" rel="stylesheet" type="text/css"/>
+	<link href="{{ STATIC_URL }}css/flexible-grids.css" rel="stylesheet" type="text/css"/>
 	<!--[if lte IE 7]>
 	<link href="../yaml/core/iehacks.css" rel="stylesheet" type="text/css" />
 	<![endif]-->
@@ -30,26 +29,34 @@
 		<div class="ym-wbox">
 			<div class="ym-grid linearize-level-1">
 					<div class="ym-g62 ym-gl">
+							<div class="ym-gbox">
 							<h1>Learning Python Byte-by-Byte.</h1>
+							</div>
 					</div>
 
 					{% block nav %}
 					<div class="ym-g38 ym-gr ym-clearfix">
 						<div class="ym-grid linearize-level-2">
 							<article class="ym-g33 ym-gl">
+								<div class="ym-gbox">
 								<p>
 									<a href="/blog/"><h3>Articles</h3></a>
 								</p>
+								</div>
 							</article>
 							<article class="ym-g33 ym-gl">
+								<div class="ym-gbox">
 								<p>
 									<a href="/books/"><h3>Books</h3></a>
 								</p>
+								</div>
 							</article>
 							<article class="ym-g33 ym-gl">
+								<div class="ym-gbox">
 								<p>
 									<a href="/feeds/"><h3>Feeds</h3></a>
 								</p>
+								</div>
 							</article>
 						</div>
 					</div>
@@ -65,9 +72,11 @@
 		<div class="ym-wbox">
 
 		{% block content %}
-		<div class="ym-grid content linearize-level-1">
+		<div class="ym-grid content linearize-level-2">
 			<div class="ym-g20 ym-gl"> 
+				<div class="ym-gbox">
 				{% block left %}{% endblock %}
+				</div>
 			</div>
 			<div class="ym-g50 ym-gl">
 				<div class="ym-gbox">
