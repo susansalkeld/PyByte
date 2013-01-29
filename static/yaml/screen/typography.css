@@ -52,7 +52,7 @@
 		font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
 		font-size:87.50%; /* base: 14px */
 		color:#444;
-		background: #f6f6e8;
+		background:#fbfdf5;/* #f6faef;*/
 
 		/* (en) Prevent auto-scaling of text in mobile webkit browsers */
 		/* (de) Automatische Schriftvergrößerung in mobilen Webkit-Browsern vermeiden */
