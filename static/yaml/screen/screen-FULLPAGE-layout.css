@@ -40,7 +40,6 @@
 
 	/* Basic Element Styling */
 	header {
-		background: #f6f6e8;
 		color: #404040;/*#ccc;*/
 	}
 
@@ -53,9 +52,6 @@
 		background: #222222;
 	}
 
-	#main {
-		background: #f6f6e8;
-	}
 
 	#main .info {
 		margin-bottom: 1.5em;
