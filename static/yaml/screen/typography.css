@@ -49,10 +49,10 @@
 	/* (en) base layout gets standard font size 14px */
 	/* (de) Basis-Layout erhält Standardschriftgröße von 14 Pixeln */
 	body {
-		font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+		font-family: 'Open Sans', sans-serif;/*"Droid Serif", Georgia, "Times New Roman", Times, serif;*/
 		font-size:87.50%; /* base: 14px */
-		color:#444;
-		background: #f6f6e8;
+		color:#555;
+		background:#f8f8f8;/*#f6f6e8;*/
 
 		/* (en) Prevent auto-scaling of text in mobile webkit browsers */
 		/* (de) Automatische Schriftvergrößerung in mobilen Webkit-Browsern vermeiden */
@@ -67,7 +67,7 @@
 	h4,
 	h5,
 	h6 {
-		font-family: 'Ubuntu', sans-serif;/*'lato',Arial;*/
+		font-family: 'Open Sans', sans-serif; /*'Ubuntu', sans-serif;/*'lato',Arial;*/
 		font-weight: 400;
 		color:#404040;/*#161e21;*/
 		margin:0;
@@ -82,9 +82,10 @@
 	}
 
 	h2 {
-		font-size:250%;
+		font-family: 'Ubuntu', sans-serif;
+		font-size:1.5em;
 		line-height: 1.2em;
-		color:#d43f3f;/*#CC0000;*/
+		color:#EA4B2B;/*#d43f3f;*//*#CC0000;*/
 		margin: 0.6em 0 0 0;
 	}
 
@@ -168,7 +169,6 @@
 		margin: 1.5em 0 0 0;
 	}
 	.landing {
-		font-family: 'Open Sans', sans-serif;/*'Trykker', serif;*//*FrutigerNeue,Helvetica,Arial,sans-serif;*//*"Myriad Pro", myriad-pro, Verdana, serif;*/
 		color: #bdbab4;
 		font-size:16px;
 	}
@@ -178,24 +178,37 @@
 		color: #716c63;/*#404041;*/
 	}
 
-	
-	.content {
-		border-top: 2px silver dotted;
-		margin:0em 0 0 0em;
-		font-family: 'Open Sans', sans-serif;/*FrutigerNeue,Helvetica,Arial,sans-serif; *//*"Myriad Pro", myriad-pro, Verdana, serif;*//*'Open Sans',helvetica, arial, san-serif; "Helvetica Neue", Helvetica;*/
-
+	.landing a {
+			font-size: 0.9em; /*133.33%;*/
+		font-weight: 100%;
+		color: #4D4D4D;/*#6bcbca;#161e21;*/
 	}
+
+	
+
+	.dotted{
+		border-top: 2px silver dotted;
+	}
+
+	.content h2 {
+		font-family: 'Open Sans', sans-serif;
+	}
+
 	.content p{
 		font-size:1.4em;
 		color: #716c63;/*#666;*/
 		line-height: 160%;
 	}
 
+	.margins {
+		margin: 2em 0 0 5em;
+	}
+
+
 	.content a {
-		font-family: "Ubuntu", sans-serif;
-		font-size:133.33%;
-		font-weight: 600;
-		color: #6bcbca;/*#161e21;*/
+		font-size: 0.9em; /*133.33%;*/
+		font-weight: 100%;
+		color: #4D4D4D;/*#6bcbca;#161e21;*/
 	}
 
 	.content a:hover {
@@ -286,9 +299,11 @@
 	/*--- Links ----------------------------------------------------------------------------------------- */
 
 	a {
-		color:#6bcbca;/*#4D87C7;*/
+		color:#4D4D4D; /*#6bcbca;#4D87C7;*/
 		background:transparent;
 		text-decoration:none;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 0.9em;
 	}
 
 	a:active { outline: none; }

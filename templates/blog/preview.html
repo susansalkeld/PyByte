@@ -12,18 +12,17 @@
 								<article class="ym-g50 ym-gr">
 								<div class="ym-gbox">
 								<h3>Browse By Tag:</h3>
-								<p> this will be dates.</p>
+								<p> this will be tag.</p>
 								</div>
 							</article>
 						</section>
 					</section>
 					</div>
 
-					<section class="ym-grid content linearize-level-2">
-						<div class="ym-wbox">
+					<section class="ym-grid content dotted linearize-level-2">
 							{% for entry in entries %}
 							<article class="ym-g33 ym-gl">
-								<div class="ym-gbox">
+								<div class="ym-gbox margins">
 									<!-- content -->
 									<h2>{{ entry.title }}</h2>
 									<h6 class="date">{{entry.pub_date}}</h6>
@@ -32,6 +31,5 @@
 								</div>
 							</article>
 							{% endfor %}
-						</div>
 					</section>
 {% endblock %}
