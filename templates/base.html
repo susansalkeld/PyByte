@@ -25,6 +25,7 @@
 </ul>
 
 <header>
+	{% block header %}
 	<div class="ym-wrapper">
 		<div class="ym-wbox">
 			<div class="ym-grid linearize-level-1">
@@ -33,7 +34,7 @@
 							<h1>Learning Python Byte-by-Byte.</h1>
 							</div>
 					</div>
-
+					{% endblock%}
 					{% block nav %}
 					<div class="ym-g38 ym-gr ym-clearfix">
 						<div class="ym-grid linearize-level-2">
@@ -69,9 +70,9 @@
 
 <div id="main">
 	<div class="ym-wrapper">
-		<div class="ym-wbox">
 
 		{% block content %}
+		<div class="ym-wbox"><p></p></div>
 		<div class="ym-grid content linearize-level-2">
 			<div class="ym-g20 ym-gl"> 
 				<div class="ym-gbox">
@@ -82,8 +83,7 @@
 				<div class="ym-gbox">
 					{%block center %}{% endblock %}
 				</div>
-			</div>	
-
+			</div>
 			<aside class="ym-g25 ym-gr ">
 					<div class="ym-gbox-right ym-clearfix">
 						{% block right %}{% endblock %}
@@ -92,7 +92,6 @@
 		</div>
 		{% endblock %}
 
-		</div>
 	</div>
 </div>
 

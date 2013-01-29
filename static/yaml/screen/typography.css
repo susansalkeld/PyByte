@@ -52,7 +52,7 @@
 		font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
 		font-size:87.50%; /* base: 14px */
 		color:#444;
-		background:#fbfdf5;/* #f6faef;*/
+		background: #f6f6e8;
 
 		/* (en) Prevent auto-scaling of text in mobile webkit browsers */
 		/* (de) Automatische Schriftvergrößerung in mobilen Webkit-Browsern vermeiden */
@@ -178,9 +178,10 @@
 		color: #716c63;/*#404041;*/
 	}
 
+	
 	.content {
 		border-top: 2px silver dotted;
-		margin:2em 0 0 1.5em;
+		margin:0em 0 0 0em;
 		font-family: 'Open Sans', sans-serif;/*FrutigerNeue,Helvetica,Arial,sans-serif; *//*"Myriad Pro", myriad-pro, Verdana, serif;*//*'Open Sans',helvetica, arial, san-serif; "Helvetica Neue", Helvetica;*/
 
 	}

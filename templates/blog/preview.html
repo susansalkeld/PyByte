@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+					<div class="ym-wbox">
 					<section class="box info">
 						<section class="ym-grid linearize-level-1">
 							<article class="ym-g50 ym-gl">
@@ -16,8 +17,10 @@
 							</article>
 						</section>
 					</section>
+					</div>
 
 					<section class="ym-grid content linearize-level-2">
+						<div class="ym-wbox">
 							{% for entry in entries %}
 							<article class="ym-g33 ym-gl">
 								<div class="ym-gbox">
@@ -29,5 +32,6 @@
 								</div>
 							</article>
 							{% endfor %}
+						</div>
 					</section>
 {% endblock %}
