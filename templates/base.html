@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>PyByte</title>
+
+	<!-- Mobile viewport optimisation -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- (en) Add your meta data here -->
+	<!-- (de) Fuegen Sie hier ihre Meta-Daten ein -->
+	<link href='http://fonts.googleapis.com/css?family=Trykker' rel='stylesheet' type='text/css'>
+	<link href="/home/susan/public_html/pybyte/static/css/flexible-grids.css" rel="stylesheet" type="text/css"/>
+	<!--[if lte IE 7]>
+	<link href="../yaml/core/iehacks.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<ul class="ym-skiplinks">
+	<li><a class="ym-skip" href="#nav">Skip to navigation (Press Enter)</a></li>
+	<li><a class="ym-skip" href="#main">Skip to main content (Press Enter)</a></li>
+</ul>
+
+<header>
+	<div class="ym-wrapper">
+		<div class="ym-wbox">
+			<div class="ym-grid linearize-level-1">
+					<div class="ym-g62 ym-gl">
+							<h1>Learning Python Byte-by-Byte.</h1>
+					</div>
+
+					{% block nav %}
+					<div class="ym-g38 ym-gr ym-clearfix">
+						<div class="ym-grid linearize-level-2">
+							<article class="ym-g33 ym-gl">
+								<p>
+									<a href="/blog/"><h3>Articles</h3></a>
+								</p>
+							</article>
+							<article class="ym-g33 ym-gl">
+								<p>
+									<a href="/books/"><h3>Books</h3></a>
+								</p>
+							</article>
+							<article class="ym-g33 ym-gl">
+								<p>
+									<a href="/feeds/"><h3>Feeds</h3></a>
+								</p>
+							</article>
+						</div>
+					</div>
+					{% endblock %}
+
+			</div>
+		</div>
+	</div>
+</header>
+
+<div id="main">
+	<div class="ym-wrapper">
+		<div class="ym-wbox">
+
+		{% block content %}
+		<div class="ym-grid content linearize-level-1">
+			<div class="ym-g20 ym-gl"> 
+				{% block left %}{% endblock %}
+			</div>
+			<div class="ym-g50 ym-gl">
+				<div class="ym-gbox">
+					{%block center %}{% endblock %}
+				</div>
+			</div>	
+
+			<aside class="ym-g25 ym-gr ">
+					<div class="ym-gbox-right ym-clearfix">
+						{% block right %}{% endblock %}
+					</div>
+			</aside>
+		</div>
+		{% endblock %}
+
+		</div>
+	</div>
+</div>
+
+
+<footer class="bordered">
+	<div class="ym-wrapper">
+		<div class="ym-wbox">
+			<p>© Susan 2013 &ndash; Layout based on <a href="http://www.yaml.de">YAML</a> | <a href="/about/">About Me</a></p>
+		</div>
+	</div>
+</footer>
+
+<!-- full skip link functionality in webkit browsers -->
+<script src="{{STATIC_URL}}yaml/core/js/yaml-focusfix.js"></script>
+</body>
+</html>

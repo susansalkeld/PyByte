@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+					<section class="box info linearize-level-1">
+						<section class="ym-grid">
+							<article class="ym-g50 ym-gl">
+								<div class="ym-gbox">
+								<h3>Browse By Month:</h3>
+								<p> this will be dates.</p>
+							</article>
+								<article class="ym-g50 ym-gr">
+								<div class="ym-gbox">
+								<h3>Browse By Tag:</h3>
+								<p> this will be dates.</p>
+							</article>
+						</section>
+					</section>
+						<section class="ym-grid content linearize-level-2">
+							{% for entry in entries %}
+							<article class="ym-g33 ym-gl">
+								<div class="ym-gbox">
+									<!-- content -->
+									<h2>{{ entry.title }}</h2>
+									<h6 class="date">{{entry.pub_date}}</h6>
+									<p>{{ entry.summary|slice:":100"}}.</p><a class="ym-button ym-next" href="/blog/entry/{{ entry.id}}">Read Post</a>
+								</div>
+							</article>
+							{% endfor %}
+					</section>
+{% endblock %}
